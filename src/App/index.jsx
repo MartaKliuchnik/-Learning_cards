@@ -1,6 +1,11 @@
+import CardsContainer from "../CardsContainer";
+import { cards } from '../data/cards';
+
 function App() {
   return (
-    <div></div>
+    <div>
+      <CardsContainer cardsArray={cards} />
+    </div>
   );
 }
 
