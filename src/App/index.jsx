@@ -3,6 +3,7 @@ import AddPostForm from "../AddPostForm";
 import { cards } from '../data/cards';
 import { useState } from "react";
 import Triggers from "../Triggers";
+import '../index.css';
 
 function App() {
 
@@ -30,12 +31,29 @@ function App() {
     }));
   };
 
+  const upendCard = (event, currentLanguage, currentId) => {
+    event.stopPropagation();
+    const updatedLanguage = currentLanguage === 'eng' ? 'rus' : 'eng';
+
+    setNewCards(newCards.map(card => {
+      if (card.id === currentId) {
+        card.language = updatedLanguage
+      }
+      return card
+    }))
+  }
+
+  const deleteCard = (event, currentId) => {
+    event.stopPropagation();
+    setNewCards(newCards.filter(card => card.id !== currentId))
+  };
+
   return (
-    <>
+    <div className='wrapper'>
       <AddPostForm addNewCard={addNewCard}/>
-      <CardsContainer cardsArray={newCards} />
+      <CardsContainer cardsArray={newCards} upendCard={upendCard} deleteCard={deleteCard} />
       <Triggers changeLanguage={changeLanguage} />
-    </>
+    </div>
   );
 }
 

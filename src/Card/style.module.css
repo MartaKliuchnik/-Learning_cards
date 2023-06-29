@@ -6,6 +6,34 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    position: relative;
+    
 }
 
+.card:hover .clear_item_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.clear_item_container{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 45px;
+    height: 25px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.clear_item{
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.clear_item:hover{
+    transform: scale(1.2);
+}
