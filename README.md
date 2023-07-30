@@ -3,6 +3,7 @@
 **Learning cards**
 
 Learning cards is a dynamic and engaging React project designed to revolutionize your language learning experience. With "Learning Cards", you have the world of English and Russian at your fingertips. 
+
 Effortlessly add new cards to build your personalized language deck. Easily delete cards that you've mastered or no longer need. With just a simple tap, you can seamlessly switch between English and Russian sides of the cards, honing your language skills from every angle.
 
 Used web-technologies:
