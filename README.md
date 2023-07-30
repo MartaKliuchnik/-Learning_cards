@@ -1,3 +1,17 @@
+![learning_cards](https://github.com/MartaKliuchnik/Learning_cards/assets/101942611/e2c99c7d-68cd-48e9-a221-ef63aa1c0280)
+
+**Learning cards**
+
+Learning cards is a dynamic and engaging React project designed to revolutionize your language learning experience. With "Learning Cards", you have the world of English and Russian at your fingertips. 
+Effortlessly add new cards to build your personalized language deck. Easily delete cards that you've mastered or no longer need. With just a simple tap, you can seamlessly switch between English and Russian sides of the cards, honing your language skills from every angle.
+
+Used web-technologies:
+- HTML, CSS
+- Javascript
+- React
+
+link: https://learning-cards.onrender.com
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
