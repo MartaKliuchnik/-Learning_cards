@@ -6,7 +6,8 @@ export default function Card({ id, eng, rus, language, upendCard, deleteCard }) 
     
     const styleForEngCard = {
         backgroundColor: language === 'eng' ? '#2980b9' : 'white',
-        color: language === 'eng' ? 'white' : '#2980b9'
+        color: language === 'eng' ? 'white' : '#2980b9',
+        textTransform: language === 'eng' ? 'uppercase' : ''
     }
 
     return (
