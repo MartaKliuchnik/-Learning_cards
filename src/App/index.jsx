@@ -11,7 +11,7 @@ function App() {
   const [language, setLanguage] = useState('eng');
 
   useEffect(() => {
-    const currentCards = JSON.parse(localStorage.getItem('cards'));
+    const currentCards = JSON.parse(localStorage.getItem('cards')) || cards;
     setNewCards(currentCards);
   }, []);
   
