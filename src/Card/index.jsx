@@ -3,7 +3,7 @@ import s from './style.module.css';
 
 export default function Card({ id, eng, rus, language, upendCard, deleteCard }) {
     const currentWord = language === 'eng' ? eng : rus;
-
+    
     const styleForEngCard = {
         backgroundColor: language === 'eng' ? '#2980b9' : 'white',
         color: language === 'eng' ? 'white' : '#2980b9'

@@ -1,7 +1,7 @@
 import CardsContainer from "../CardsContainer";
 import AddPostForm from "../AddPostForm";
 import { cards } from '../data/cards';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Triggers from "../Triggers";
 import '../index.css';
 
@@ -10,6 +10,15 @@ function App() {
   const [newCards, setNewCards] = useState(cards);
   const [language, setLanguage] = useState('eng');
 
+  useEffect(() => {
+    const currentCards = JSON.parse(localStorage.getItem('cards'));
+    setNewCards(currentCards);
+  }, []);
+  
+  useEffect(() => {
+    localStorage.setItem('cards', JSON.stringify(newCards));
+  }, [newCards]);
+  
 
   const addNewCard = (eng, rus) => setNewCards([
     ...newCards,
